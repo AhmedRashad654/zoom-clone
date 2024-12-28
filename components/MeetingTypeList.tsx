@@ -19,8 +19,8 @@ const MeetingTypeList = () => {
   const [meetingState, setMeetingState] = useState<
     "isScheduleMeeting" | "isJoiningMeeting" | "isInstantMeeting" | undefined
   >(undefined);
-  const [values, setValues] = useState(initialValues);
-  const [callDetail, setCallDetail] = useState<Call>();
+  const [values,] = useState(initialValues);
+  const [, setCallDetail] = useState<Call>();
   const user = useSelector((state: RootState) => state?.user);
   const client = useStreamVideoClient();
   const { toast } = useToast();
